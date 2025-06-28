@@ -51,9 +51,9 @@ URL: GET /tasks/:id
 Example:
 curl http://localhost:3000/tasks/1
 Validation & Error Handling
-title is required, must be a non-empty string
+1. Title is required, must be a non-empty string
 
-description is optional, but if present, must be a string
+2. Description is optional, but if present, must be a string
 
 Appropriate error messages and status codes (400, 404) are returned for:
 
@@ -68,6 +68,7 @@ Appropriate error messages and status codes (400, 404) are returned for:
 
 3. .trim() used to avoid titles like " "(empty string) being accepted.
 
-4. CORS is enabled globally  to simplify testing 
+4. CORS is enabled globally  to simplify testing
+
 
 
