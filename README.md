@@ -27,7 +27,7 @@ This is a simple RESTful API built with Node.js and Express for creating and ret
    node index.js
 4. Your server should be running at:
    http://localhost:3000
- Create a Task
+Create a Task
 URL: POST /tasks
 
 Body (JSON):
@@ -57,17 +57,17 @@ description is optional, but if present, must be a string
 
 Appropriate error messages and status codes (400, 404) are returned for:
 
-Invalid input
+1. Invalid input
 
-Task not found
+2. Task not found
 
  Design Choices
-In-memory array  was used so i can avoid database setup and keep the app lightweight 
+1. In-memory array  was used so i can avoid database setup and keep the app lightweight 
 
-Clear, human-readable error messages returned to help users understand what's wrong.
+2. Clear, human-readable error messages returned to help users understand what's wrong.
 
-.trim() used to avoid titles like " "(empty string) being accepted.
+3. .trim() used to avoid titles like " "(empty string) being accepted.
 
-CORS is enabled globally  to simplify testing 
+4. CORS is enabled globally  to simplify testing 
 
 
